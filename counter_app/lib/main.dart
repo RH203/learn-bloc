@@ -1,9 +1,11 @@
 import 'package:counter_app/cubit/counter_cubit.dart';
 import 'package:counter_app/home_page.dart';
+import 'package:counter_app/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
+  Bloc.observer = const Observer();
   runApp(const MyApp());
 }
 
