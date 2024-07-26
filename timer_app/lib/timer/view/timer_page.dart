@@ -28,7 +28,9 @@ class _TimerPageState extends State<TimerPage> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 100.0),
-                  child: Center(child: TimerText()),
+                  child: Center(
+                    child: TimerText(),
+                  ),
                 ),
                 Actions(),
               ],
