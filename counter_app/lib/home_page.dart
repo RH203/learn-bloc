@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    final counterCubit = BlocProvider.of<CounterCubit>(context);
     return Scaffold(
       appBar: AppBar(
         title: const Text("Counter"),
@@ -29,7 +28,6 @@ class _HomePageState extends State<HomePage> {
                   'You have pushed the button this many times:',
                 ),
                 BlocBuilder<CounterCubit, int>(
-                  bloc: counterCubit,
                   builder: (context, state) {
                     return Text(
                       '$state',
