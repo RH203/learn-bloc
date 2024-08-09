@@ -10,6 +10,7 @@ class App extends StatelessWidget {
       title: "Todo list",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
       routerConfig: AppRouter.router,
